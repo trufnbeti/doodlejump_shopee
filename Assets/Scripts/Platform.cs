@@ -13,8 +13,6 @@ public class Platform : MonoBehaviour
         if (itemSpawnPoint) {
             Debug.Log("Spawn item");
         }
-		Debug.Log((GameTag.LeftCorner.ToString()));
-
 	}
 	public virtual void PlatformAction() {
 

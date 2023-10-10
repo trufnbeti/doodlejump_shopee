@@ -34,13 +34,11 @@ public class MovingPlatform : Platform
 		if (col.CompareTag(GameTag.LeftCorner.ToString())) {
 			m_canMoveLeft = false;
 			m_canMoveRight = true;
-			Debug.Log("HI");
 		}
 
 		if (col.CompareTag(GameTag.RightCorner.ToString())) {
 			m_canMoveLeft = true;
 			m_canMoveRight = false;
-			Debug.Log("HI");
 		}
 	}
 }
