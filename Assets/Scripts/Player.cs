@@ -17,13 +17,10 @@ public class Player : MonoBehaviour
     {
         
     }
-    private void Jump(){
+    public void Jump(){
         if (!GameManager.Ins) return;
         if (!m_rb || m_rb.velocity.y > 0) return;
         m_rb.velocity = new Vector2(m_rb.velocity.x, jumpForce);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision) {
-        Jump();
-    }
 }
