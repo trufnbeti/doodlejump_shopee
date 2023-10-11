@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-    public Player player;
-    // Start is called before the first frame update
-    void Start()
+	public GameState state;
+	public Player player;
+    public int startingPlatform;
+	public float xSpawnOffset;
+	public float minYSpawnPos;
+	public float maxYSpawnPos;
+	// Start is called before the first frame update
+	void Start()
     {
         
     }
